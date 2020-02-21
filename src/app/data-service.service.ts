@@ -15,8 +15,8 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getFiles(): Observable<TreeNode[]>  {
-    //return this.http.get<TreeNode[]>('../assets/data/files.json');
-    return this.http.get<TreeNode[]>('../assets/data/templateData.json');                
+    return this.http.get<TreeNode[]>('../assets/data/files.json');
+    //return this.http.get<TreeNode[]>('../assets/data/templateData.json');                
                 // .pipe(
                 //   tap(res => console.log(JSON.stringify(res))),
                 //   catchError(this.handleError)
