@@ -1,7 +1,14 @@
 <div>
-  <button type="button" (click)="expandAll()">Expand All</button>
-  <button type="button" (click)="collapseAll()">Collapse</button>
+  Welcome to angular PrimeNG components Demo
 </div>
-<p-tree [value]="files" #expandingTree selectionMode="single" [(selection)]="selectedFile"
-(onNodeSelect)="nodeSelect($event)" draggableNodes="true" droppableNodes="true" [filter]="true" filterMode="strict" >
-</p-tree>
+<p-panel header="Controls">
+  <div class="ui-g">
+    <a class="ui-g-2" routerLink="/tree">TreeView</a>
+    <a class="ui-g-2" routerLink="/menu">Menu</a>
+  </div>
+</p-panel>
+<br />
+<br />
+<div>
+  <router-outlet></router-outlet>
+</div>

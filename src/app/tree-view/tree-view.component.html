@@ -1,0 +1,7 @@
+<div>
+    <button type="button" (click)="expandAll()">Expand All</button>
+    <button type="button" (click)="collapseAll()">Collapse</button>
+</div>
+<p-tree [value]="files" #expandingTree selectionMode="single" [(selection)]="selectedFile"
+    (onNodeSelect)="nodeSelect($event)" draggableNodes="true" droppableNodes="true" [filter]="true" filterMode="strict">
+</p-tree>
