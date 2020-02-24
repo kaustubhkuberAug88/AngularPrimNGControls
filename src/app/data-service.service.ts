@@ -29,6 +29,10 @@ export class DataService {
     return this.http.get<Car[]>('../assets/data/cars-small.json');
   }
 
+  getCarsMedium(){
+    return this.http.get<Car[]>('../assets/data/cars-medium.json');
+  }
+
   private handleError(err) {
     // in a real world app, we may send the server to some remote logging infrastructure
     // instead of just logging it to the console
