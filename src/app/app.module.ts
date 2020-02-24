@@ -13,10 +13,12 @@ import {TreeDragDropService} from 'primeng/api';
 import { PanelModule } from 'primeng/panel'
 import { MenuModule } from 'primeng/menu';
 import { EditorModule } from 'primeng/editor';
+import { TableModule } from 'primeng/table';
 
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { MenuComponent } from './menu/menu.component';
 import { EditorComponent } from './editor/editor.component';
+import { DatatableComponent } from './datatable/datatable.component';
 
 
 
@@ -25,19 +27,20 @@ import { EditorComponent } from './editor/editor.component';
     AppComponent,
     TreeViewComponent,
     MenuComponent,
-    EditorComponent
+    EditorComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    AppRoutingModule,
     TreeModule,
     PanelModule,
     MenuModule,
     EditorModule,
-    AppRoutingModule
-            
+    TableModule
   ],
   providers: [TreeDragDropService],
   bootstrap: [AppComponent]

@@ -7,6 +7,8 @@ import {TreeNode} from 'primeng/api';
 import { Observable, of, throwError } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
 
+import { Car } from './models/car';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -21,6 +23,10 @@ export class DataService {
                 //   tap(res => console.log(JSON.stringify(res))),
                 //   catchError(this.handleError)
                 // );                
+  }
+
+  getCarsSmall(){
+    return this.http.get<Car[]>('../assets/data/cars-small.json');
   }
 
   private handleError(err) {

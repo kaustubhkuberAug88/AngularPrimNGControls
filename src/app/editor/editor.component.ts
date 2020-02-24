@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditorComponent implements OnInit {
 
+  // Add FormsModule as it has dependency otherwise this control will not load
+
   text: string = '<div>Hello World!</div><div>PrimeNG <b>Editor</b> Rocks</div><div><br></div>';
 
   constructor() { }
