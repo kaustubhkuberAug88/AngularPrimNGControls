@@ -6,29 +6,36 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
 import {TreeModule} from 'primeng/tree';
 import {TreeDragDropService} from 'primeng/api';
 import { PanelModule } from 'primeng/panel'
 import { MenuModule } from 'primeng/menu';
+import { EditorModule } from 'primeng/editor';
 
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { MenuComponent } from './menu/menu.component';
+import { EditorComponent } from './editor/editor.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TreeViewComponent,
-    MenuComponent
+    MenuComponent,
+    EditorComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     TreeModule,
     PanelModule,
     MenuModule,
+    EditorModule,
     AppRoutingModule
             
   ],
