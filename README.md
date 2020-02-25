@@ -4,7 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Sample Images are as follows:
 
-![](images/treeview.PNG) ![](images/menu.PNG) ![](images/editor.PNG) ![](images/grid.PNG) ![](images/tablewithfilter_handson_alternative.PNG) 
+TreeView Control: <img src="images/treeview.PNG">
+Menu Control:     <img src="images/menu.PNG">
+<br />
+Editor control:   <img src="images/editor.PNG">
+<br />
+Grid Control:     <img src="images/grid.PNG">
+<br />
+Table with Filter:<img src="images/tablewithfilter_handson_alternative.PNG">
 
 ## Development server
 
