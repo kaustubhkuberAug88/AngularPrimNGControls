@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Sample Images are as follows:
 
-![](images/treeview.PNG)
+![](images/treeview.PNG) ![](images/menu.PNG) ![](images/editor.PNG) ![](images/grid.PNG) ![](images/tablewithfilter_handson_alternative.PNG) 
 
 ## Development server
 
