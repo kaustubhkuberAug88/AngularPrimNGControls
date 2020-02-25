@@ -16,6 +16,7 @@ import { EditorModule } from 'primeng/editor';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { SliderModule } from 'primeng/slider';
+import {ButtonModule} from 'primeng/button';
 // import { DropdownModule } from 'primeng/dropdown';
 // import { MultiSelectModule } from 'primeng/multiselect';
 
@@ -48,9 +49,10 @@ import { TablewithfilterComponent } from './tablewithfilter/tablewithfilter.comp
     EditorModule,
     TableModule,
     InputTextModule,
-    SliderModule
+    SliderModule,
     // DropdownModule,
     // MultiSelectModule
+    ButtonModule
   ],
   providers: [TreeDragDropService],
   bootstrap: [AppComponent]
