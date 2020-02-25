@@ -17,7 +17,26 @@ export class TablewithfilterComponent implements OnInit {
   // npm install @angular/cdk --save
   // To resolve error Can't resolve '@angular/cdk/scrolling'
 
-  // Slider, dropdown, multiselect, 
+  // Slider, dropdown, multiselect dependency
+
+  // Folllowing errors occur if (multiselect and dropdown is enabled) while build but functionality works fine
+  //ERROR in node_modules/@angular/cdk/bidi/dir.d.ts(26,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/bidi/dir.d.ts(27,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/bidi/dir.d.ts(29,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/collections/selection-model.d.ts(24,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(75,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(76,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(82,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(83,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(88,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/fixed-size-virtual-scroll.d.ts(89,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-for-of.d.ts(49,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-for-of.d.ts(50,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-for-of.d.ts(56,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-for-of.d.ts(57,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-for-of.d.ts(60,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-scroll-viewport.d.ts(27,9): error TS1086: An accessor cannot be declared in an ambient context.
+  // node_modules/@angular/cdk/scrolling/virtual-scroll-viewport.d.ts(28,9): error TS1086: An accessor cannot be declared in an ambient context.
 
   cars: Car[];
   cols: any;
@@ -67,7 +86,8 @@ export class TablewithfilterComponent implements OnInit {
       { field: 'vin', header: 'Vin' },
       { field: 'year', header: 'Year' },
       { field: 'brand', header: 'Brand' },
-      { field: 'color', header: 'Color' }
+      { field: 'color', header: 'Color' },
+      { field: 'price', header: 'Price' }
     ];
 
     FilterUtils['custom'] = (value, filter): boolean => {

@@ -14,9 +14,10 @@ import { PanelModule } from 'primeng/panel'
 import { MenuModule } from 'primeng/menu';
 import { EditorModule } from 'primeng/editor';
 import { TableModule } from 'primeng/table';
-//import { SliderModule } from 'primeng/slider';
-//import { DropdownModule } from 'primeng/dropdown';
-//import { MultiSelectModule } from 'primeng/multiselect';
+import { InputTextModule } from 'primeng/inputtext';
+import { SliderModule } from 'primeng/slider';
+// import { DropdownModule } from 'primeng/dropdown';
+// import { MultiSelectModule } from 'primeng/multiselect';
 
 import { TreeViewComponent } from './tree-view/tree-view.component';
 import { MenuComponent } from './menu/menu.component';
@@ -45,8 +46,9 @@ import { TablewithfilterComponent } from './tablewithfilter/tablewithfilter.comp
     PanelModule,
     MenuModule,
     EditorModule,
-    TableModule
-    // SliderModule,
+    TableModule,
+    InputTextModule,
+    SliderModule
     // DropdownModule,
     // MultiSelectModule
   ],
